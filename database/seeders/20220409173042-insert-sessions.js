@@ -6,6 +6,7 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await Session.bulkCreate([
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 7,
         day: 1,
@@ -16,6 +17,8 @@ module.exports = {
         classroomId: 1,
       },
       {
+        
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 4,
         day: 1,
@@ -26,6 +29,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 5,
         endWeek: 5,
         day: 1,
@@ -36,6 +40,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 6,
         endWeek: 7,
         day: 1,
@@ -46,6 +51,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 8,
         endWeek: 8,
         day: 1,
@@ -56,6 +62,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 9,
         endWeek: 10,
         day: 1,
@@ -66,6 +73,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 4,
         day: 1,
@@ -76,6 +84,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 4,
         day: 1,
@@ -86,6 +95,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 5,
         endWeek: 6,
         day: 1,
@@ -96,6 +106,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 7,
         endWeek: 8,
         day: 1,
@@ -108,6 +119,7 @@ module.exports = {
 
 
       {
+        startDate: '2021-10-04',
         startWeek: 4,
         endWeek: 13,
         day: 2,
@@ -118,6 +130,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 12,
         day: 2,
@@ -128,6 +141,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 13,
         endWeek: 18,
         day: 2,
@@ -138,6 +152,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 14,
         endWeek: 16,
         day: 2,
@@ -150,6 +165,7 @@ module.exports = {
 
 
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 6,
         day: 3,
@@ -160,6 +176,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 6,
         day: 3,
@@ -170,6 +187,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 7,
         endWeek: 8,
         day: 3,
@@ -180,6 +198,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 9,
         endWeek: 11,
         day: 3,
@@ -192,6 +211,7 @@ module.exports = {
 
 
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 10,
         day: 4,
@@ -202,6 +222,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 5,
         endWeek: 11,
         day: 4,
@@ -212,6 +233,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 12,
         endWeek: 14,
         day: 4,
@@ -222,6 +244,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 1,
         endWeek: 4,
         day: 4,
@@ -232,6 +255,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 1,
         endWeek: 5,
         day: 4,
@@ -242,6 +266,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 5,
         endWeek: 10,
         day: 4,
@@ -252,6 +277,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 6,
         endWeek: 9,
         day: 4,
@@ -262,6 +288,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 11,
         endWeek: 11,
         day: 4,
@@ -272,6 +299,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 12,
         endWeek: 12,
         day: 4,
@@ -282,6 +310,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 1,
         endWeek: 5,
         day: 4,
@@ -292,6 +321,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 14,
         endWeek: 15,
         day: 4,
@@ -302,6 +332,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 9,
         day: 5,
@@ -312,6 +343,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 7,
         day: 5,
@@ -322,6 +354,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 10,
         endWeek: 12,
         day: 5,
@@ -332,6 +365,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 3,
         endWeek: 7,
         day: 5,
@@ -342,6 +376,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 2,
         endWeek: 8,
         day: 5,
@@ -352,6 +387,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 9,
         endWeek: 10,
         day: 5,
@@ -362,6 +398,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 11,
         endWeek: 12,
         day: 5,
@@ -372,6 +409,7 @@ module.exports = {
         classroomId: 1,
       },
       {
+        startDate: '2021-10-04',
         startWeek: 13,
         endWeek: 15,
         day: 5,

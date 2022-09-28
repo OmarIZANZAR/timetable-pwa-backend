@@ -28,6 +28,10 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             unique: true,
         },
+        startDate: {
+            type: DataTypes.DATEONLY,
+            allowNull: false,
+        },
         startWeek: {
             type: DataTypes.INTEGER,
             allowNull: false,
