@@ -14,7 +14,7 @@ async function authClient(req, res, next){
         const token = await jwt.sign(
             { user: client_id }, 
             privateKey, 
-            { expiresIn: '1 day'}
+            { expiresIn: '1h'}
         )
 
         res.json({ access_token: token })

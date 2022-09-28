@@ -1,6 +1,6 @@
 const colors = require('colors');
-const cors = require('cors');
 const dotenv = require('dotenv').config();
+const cors = require('cors');
 const express = require('express');
 const { sequelize } = require('./database/models');
 const { authClient } = require('./config/auth');
@@ -19,10 +19,20 @@ async function connectDB() {
     return new Promise( async (resolve, reject) => {
         try {
             await sequelize.authenticate()
-            console.log(`db connected to ${sequelize.config.database}...`.yellow.bold,)
+
+            if( process.env.NODE_ENV === 'developement' ){
+                console.log(`db connected to ${sequelize.config.database}...`.yellow.bold)
+            } else {
+                console.log(`db connected to ${sequelize.config.database}...`)
+            }
+            
             resolve()
         } catch (error) {
-            console.log("db not connected".red.bold.underline)
+            if( process.env.NODE_ENV === 'developement' ){
+                console.log("db not connected".red.bold.underline)
+            } else {
+                console.log("db not connected")
+            }
         }
     })
 }
@@ -46,9 +56,9 @@ app.use('/sessions', SessionsRouter)
 // Base:
 app.get('/', (req, res) => {
     if( process.env.NODE_ENV === 'developement' ){
-        res.redirect('http://localhost:3000/')
+        res.redirect('http://localhost:3000')
     } else {
-        res.redirect('http://localhost:3000/')
+        res.redirect('https://ensemtimetable.netlify.app')
     }
 })
 
@@ -57,4 +67,10 @@ app.post('/authenticate', authClient)
 
 // Server:
 const PORT = 5000 || process.env.PORT
-app.listen(PORT, () => console.log(`server running on port ${PORT}...`.yellow.bold))
+app.listen(PORT, () => {
+    if( process.env.NODE_ENV === 'developement' ){
+        console.log(`server running on port ${PORT}...`.yellow.bold)
+    } else {
+        console.log(`server running on port ${PORT}...`)
+    }
+})
