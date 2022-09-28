@@ -1,0 +1,182 @@
+'use strict';
+
+const { Element } = require('../models')
+
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    await Element.bulkCreate([
+      { 
+        title: "base de donnees reparties",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 1,
+        teacherId: null,
+      },
+      { 
+        title: "bases de donnees multimedia",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 1,
+        teacherId: null,
+      },
+      { 
+        title: "couches hautes",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 2,
+        teacherId: null,
+      },
+      { 
+        title: "reseaux a haut debit",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 2,
+        teacherId: null,
+      },
+      { 
+        title: "systemes mobiles",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 2,
+        teacherId: null,
+      },
+      { 
+        title: "architec clients/serveurs",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 3,
+        teacherId: null,
+      },
+      { 
+        title: "administrations des systemes",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 3,
+        teacherId: null,
+      },
+      { 
+        title: "securite des systemes",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 3,
+        teacherId: null,
+      },
+      { 
+        title: "administration des bases des donnees",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 4,
+        teacherId: null,
+      },
+      { 
+        title: "les moteurs des bd",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 4,
+        teacherId: null,
+      },
+      { 
+        title: "fiabilite des systemes",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 5,
+        teacherId: null,
+      },
+      { 
+        title: "generateurs de systeme temps reel",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 5,
+        teacherId: null,
+      },
+      { 
+        title: "generateurs d’architecture temps reel",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 5,
+        teacherId: null,
+      },
+      { 
+        title: "qualite et normalisation",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 6,
+        teacherId: null,
+      },
+      { 
+        title: "audit",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 6,
+        teacherId: null,
+      },
+      { 
+        title: "finance",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 7,
+        teacherId: null,
+      },
+      { 
+        title: "management",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 7,
+        teacherId: null,
+      },
+      { 
+        title: "marketing",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 7,
+        teacherId: null,
+      },
+      { 
+        title: "communication",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 8,
+        teacherId: null,
+      },
+      { 
+        title: "anglais",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 8,
+        teacherId: null,
+      },
+      { 
+        title: "eps",
+        description: "i will do this latter",
+        coursHoursCount: 20,
+        tpHoursCount: 10,
+        moduleId: 8,
+        teacherId: null,
+      } 
+    ]);
+  },
+
+  async down (queryInterface, Sequelize) {
+    await queryInterface.bulkDelete('elements', null, {});
+  }
+};
